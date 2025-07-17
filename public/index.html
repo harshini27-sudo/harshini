@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cake Sale </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Harzz pastry</h1>
+	</header>
+	<main>
+		<section class="cakes">
+			<h2>Delicious Cakes</h2>
+			<ul>
+				<li>
+					<img src="Chocolate cake.1.jpg" alt="Chocolate Cake">
+					<h3>Chocolate Cake</h3>
+					<p>Rs:350</p>
+				</li>
+				<li>
+					<img src="Vanilla cake.1.jpeg" alt="Vanilla Cake">
+					<h3>Vanilla Cake</h3>
+					<p>Rs:300 </p>
+				</li>
+				<li>
+					<img src="Red velvet.1.jpeg" alt="Red Velvet Cake">
+					<h3>Red Velvet Cake</h3>
+					<p>Rs:400</p>
+				</li>
+			</ul>
+		</section>
+		<section class="order">
+			<h2>Order Now!</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br><br>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br><br>
+				<label for="cake">Choose a cake:</label>
+				<select id="cake" name="cake">
+					<option value="chocolate">Chocolate Cake</option>
+					<option value="vanilla">Vanilla Cake</option>
+					<option value="redvelvet">Red Velvet Cake</option>
+				</select><br><br>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity"><br><br>
+				<input type="submit" value="Order Now!">
+			</form>
+		</section>
+	</main>
+</body>
+</html>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDraIZdrsrTs1qaIfnm33TR6o9U3DBONmg",
+    authDomain: "harzz-27.firebaseapp.com",
+    projectId: "harzz-27",
+    storageBucket: "harzz-27.firebasestorage.app",
+    messagingSenderId: "384775291399",
+    appId: "1:384775291399:web:55f3159d349a78e12120a2",
+    measurementId: "G-TFWDQMQRD9"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
